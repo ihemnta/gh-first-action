@@ -1,0 +1,18 @@
+name: First Workflow (this is the name of workflow)
+
+# after giving the name now we are defining when should this workflow get started/executed.
+
+on: workflow_dispatch #this is the name of event. this event means workflow will get started manually
+
+#now we will define the jobs.
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "Hello World!"
+      - name: print goodbye
+        run: echo "hola done!"
+
+# this work flow is compleated, it has one job and two steps.
